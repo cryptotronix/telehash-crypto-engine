@@ -30,3 +30,34 @@
 
 # Debug files
 *.dSYM/
+/.libs/
+/INSTALL
+/Makefile
+/Makefile.in
+/aclocal.m4
+/ar-lib
+/autom4te.cache/
+/compile
+/config.guess
+/config.h
+/config.h.in
+/config.log
+/config.status
+/config.sub
+/configure
+/depcomp
+/install-sh
+/libtool
+/ltmain.sh
+/m4/
+/missing
+/src/micro-ecc/.deps/
+/src/micro-ecc/.dirstamp
+/src/micro-ecc/test/.deps/
+/src/micro-ecc/test/.libs/
+/src/micro-ecc/test/Makefile
+/src/micro-ecc/test/Makefile.in
+/src/micro-ecc/test/test_ecdh
+/src/micro-ecc/test/test_ecdsa
+/stamp-h1
+/tce-0.1.pc

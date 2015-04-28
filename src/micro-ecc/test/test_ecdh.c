@@ -1,6 +1,6 @@
 /* Copyright 2014, Kenneth MacKay. Licensed under the BSD 2-clause license. */
 
-#include "uECC.h"
+#include "../uECC.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -42,21 +42,21 @@ int main()
 #if LPC11XX
     uartInit(BAUD_115200);
 	initTime();
-	
+
     uECC_set_rng(&fake_rng);
 #endif
-	
+
     int i;
-    
+
     uint8_t l_private1[uECC_BYTES];
     uint8_t l_private2[uECC_BYTES];
-    
+
     uint8_t l_public1[uECC_BYTES * 2];
     uint8_t l_public2[uECC_BYTES * 2];
-    
+
     uint8_t l_secret1[uECC_BYTES];
     uint8_t l_secret2[uECC_BYTES];
-    
+
     printf("Testing 256 random private key pairs\n");
 
     for(i=0; i<256; ++i)
@@ -83,7 +83,7 @@ int main()
             printf("shared_secret() failed (2)\n");
             return 1;
         }
-        
+
         if(memcmp(l_secret1, l_secret2, sizeof(l_secret1)) != 0)
         {
             printf("Shared secrets are not identical!\n");
@@ -102,6 +102,6 @@ int main()
         }
     }
     printf("\n");
-    
+
     return 0;
 }
