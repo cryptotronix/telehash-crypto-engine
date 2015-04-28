@@ -28,6 +28,19 @@ platforms including AVR, bare-metal ARM, and the common popular PC
 architectures. The build will produce a static library that you'll be
 hopefully able to link into your project.
 
+For example, to cross-compile this project for an ARM Linux machine
+use:
+
+```
+./configure --build=`./config.guess` --host=arm-linux-gnueabi
+```
+
+For bare-metal arm, it appears that a different GNU arm toolchain must
+be used. There seems to be two options:
+
+1. [GNU Tools for ARM Embedded Processors](https://launchpad.net/gcc-arm-embedded)
+2. [Terry Guo's Port of #1](https://launchpad.net/~terry.guo/+archive/ubuntu/gcc-arm-embedded)
+
 # Hardware support
 
 One important goal of this project is to support embedded
