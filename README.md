@@ -35,6 +35,12 @@ use:
 ./configure --build=`./config.guess` --host=arm-linux-gnueabi
 ```
 
+To build for AVR:
+
+```
+./configure --build=`./config.guess` --host=avr
+```
+
 For bare-metal arm, it appears that a different GNU arm toolchain must
 be used. There seems to be two options:
 
