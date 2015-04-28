@@ -18,7 +18,7 @@ distribution.
 Initially, support for Telehash cipher suites is limited to
 [1a](https://github.com/telehash/telehash.org/blob/master/v3/e3x/cs/1a.md)
 and
-[1b](https://github.com/telehash/telehash.org/blob/master/v3/e3x/cs/1b.md.
+[1b](https://github.com/telehash/telehash.org/blob/master/v3/e3x/cs/1b.md).
 
 # Building
 
